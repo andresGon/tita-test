@@ -2,19 +2,88 @@
     "ImagesInner":[
         {
             "id": 0,
-            "src" : "./img/01.jpg"
+            "src" : "./img/01.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
         },
         {
             "id": 1,
-            "src" : "./img/02.jpg"
+            "src" : "./img/02.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
         },
         {
             "id": 2,
-            "src" : "./img/03.jpg"
+            "src" : "./img/03.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
         },
         {
             "id": 3,
-            "src" : "./img/04.jpg"
+            "src" : "./img/04.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 4,
+            "src" : "./img/05.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 5,
+            "src" : "./img/06.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 6,
+            "src" : "./img/07.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 7,
+            "src" : "./img/08.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 8,
+            "src" : "./img/09.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 9,
+            "src" : "./img/10.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 10,
+            "src" : "./img/11.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 11,
+            "src" : "./img/12.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 12,
+            "src" : "./img/13.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 13,
+            "src" : "./img/14.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 14,
+            "src" : "./img/15.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 15,
+            "src" : "./img/16.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
+        },
+        {
+            "id": 16,
+            "src" : "./img/17.jpg",
+            "title": "Esta es el titulo para la imagen no. 1"
         }
     ]
 }
