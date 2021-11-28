@@ -2,15 +2,15 @@
     "ImagesInner":[
         {
             "id": 0,
-            "src" : ".img/01.jpg"
+            "src" : "./img/01.jpg"
         },
         {
             "id": 1,
-            "src" : ".img/02.jpg"
+            "src" : "./img/02.jpg"
         },
         {
             "id": 2,
-            "src" : ".img/03.jpg"
+            "src" : "./img/03.jpg"
         }
     ]
 }
