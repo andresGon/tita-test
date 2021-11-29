@@ -119,6 +119,14 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.header-btnSearch:hover {
+  background-color: #fe667f;
+  color: #fff;
 }
 
 .header-col {
@@ -180,16 +188,16 @@ nav {
 }
 
 .mansonry-wrapLay {
-  width: 90%;
+  width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
@@ -199,6 +207,17 @@ nav {
 
 .mansonry-wrapLay a {
   color: #fe667f;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner-tit {
@@ -225,7 +244,7 @@ nav {
 
 .btn-main {
   padding: 10px 20px;
-  color: #000;
+  color: #707070;
   font-family: 'Questrial', sans-serif;
   font-size: 14px;
   -webkit-transition: .3s;
@@ -247,27 +266,57 @@ nav {
   text-align: center;
 }
 
+.btn-main.active {
+  color: #fff;
+  background-color: #fe667f;
+}
+
 footer {
   text-align: center;
   font-size: 13px;
   color: #c2cfd7;
 }
 
+footer p {
+  margin: 35px 0;
+}
+
+footer p b {
+  color: #fe667f;
+  font-weight: normal;
+}
+
 .footer-social {
   margin: 0 0 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-social a {
   color: #c2cfd7;
   -webkit-transition: .3s;
   transition: .3s;
+  margin: 0 7px;
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .footer-social a:hover {
   color: #fe667f;
 }
 
-.footer p {
-  margin: 0;
+.footer-social a:nth-child(4) {
+  font-size: 18px;
+}
+
+.footer-social a:nth-child(5) {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
