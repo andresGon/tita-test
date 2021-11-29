@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Questrial&display=swap');
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Questrial', sans-serif;*/
 
 html, body{
     margin: 0;
@@ -7,16 +11,64 @@ html, body{
 }
 
 .container{
-    width: 1280px;
     margin: 0 auto;
+    &-banner{
+        width: 100%;
+        height: 500px;
+        background-color: #fe667f;
+
+    }
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+// var
+
+
+//header
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    height: 100px;
+    margin: auto;
+
+    
+}
+.header{
+    &-btnSearch{
+        width: 34px;
+        height: 34px;
+        background: #fe667f;
+    }
+    &-col{
+        display: flex;
+        align-items: center;
+    }
+}
+nav{
+    a{
+        padding: 10px 20px;
+        color: #000;
+        font-family: 'Questrial', sans-serif;
+        font-size: 14px;
+        transition: .3s;
+        &:hover{
+            color: #fff;
+            background-color: #fe667f; 
+        }
+    }
+    
 }
 
 
+// mansonry grid
 .mansonry{
     &-wrap{
-        width: 800px;
+        width: 1170px;
         margin: auto;
-        background-color: aqua;
         column-count: 3;
         column-gap: 10px;
     }
@@ -24,14 +76,11 @@ html, body{
         display: inline-block;
         width: calc(100% - 20px);
         padding: 10px;
-        background: #ccc;
-        margin-bottom: 20px;
+        background: rgb(235, 235, 235);
+        margin-bottom: 10px;
         img{
             max-width: 100%;
             display: block;
-        }
-        &:nth-child(2n+3){
-            
         }
     }
 }

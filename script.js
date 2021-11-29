@@ -13,8 +13,8 @@ const wrapMasonry = document.querySelector('.mansonry-wrap');
     }
   }
 
+// then para imprir las imagenes con las rutas desde el json
   fetchImagesJSON().then(images => {
-    //console.log(images.ImagesInner);
     images.ImagesInner.forEach(element => {
       wrapMasonry.innerHTML += '<div class="mansonry-wImg"><img src="' + element.src +'"></div>'
     });
