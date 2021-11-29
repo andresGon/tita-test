@@ -1,4 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Questrial&display=swap");
+@font-face {
+  font-family: 'icomoon';
+  src: url("../icons/");
+  src: url("../icons/#iefix") format("embedded-opentype"), url("../icons/icomoon.ttf?jxvjcb") format("truetype"), url("../icons/icomoon.woff?jxvjcb") format("woff"), url("../icons/icomoon.svg?jxvjcb#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+.icon-stop2:before {
+  content: "\ea1e";
+}
+
+.icon-google-plus:before {
+  content: "\ea8b";
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-youtube:before {
+  content: "\ea9d";
+}
+
+.icon-dribbble:before {
+  content: "\eaa7";
+}
+
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Questrial', sans-serif;*/
 html, body {
@@ -15,6 +70,20 @@ html, body {
   width: 100%;
   height: 500px;
   background-color: #fe667f;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 a {
@@ -40,7 +109,16 @@ header {
 .header-btnSearch {
   width: 34px;
   height: 34px;
-  background: #fe667f;
+  color: #fe667f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header-col {
@@ -52,18 +130,13 @@ header {
           align-items: center;
 }
 
-nav a {
-  padding: 10px 20px;
-  color: #000;
-  font-family: 'Questrial', sans-serif;
-  font-size: 14px;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-nav a:hover {
-  color: #fff;
-  background-color: #fe667f;
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mansonry-wrap {
@@ -79,12 +152,122 @@ nav a:hover {
   display: inline-block;
   width: calc(100% - 20px);
   padding: 10px;
-  background: #ebebeb;
+  background: #f6f6f6;
   margin-bottom: 10px;
 }
 
 .mansonry-wImg img {
   max-width: 100%;
   display: block;
+}
+
+.mansonry-wrapBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  width: 90%;
+  margin: 0 auto 70px;
+}
+
+.mansonry-wrapLay {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin: 25px auto;
+}
+
+.mansonry-wrapLay a {
+  color: #fe667f;
+}
+
+.banner-tit {
+  margin: 0 0 50px 0;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.banner-txt {
+  margin: 0 0 50px 0;
+  font-family: "Questrial", sans-serif;
+  max-width: 580px;
+  text-align: center;
+}
+
+.banner-btn {
+  background-color: #fff;
+  color: #fe667f;
+  padding: 12px 30px;
+  border: none;
+  font-size: 10px;
+}
+
+.btn-main {
+  padding: 10px 20px;
+  color: #000;
+  font-family: 'Questrial', sans-serif;
+  font-size: 14px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: block;
+}
+
+.btn-main:hover {
+  color: #fff;
+  background-color: #fe667f;
+}
+
+.btn-main--more {
+  background-color: #fe667f;
+  color: #fff;
+  display: block;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #c2cfd7;
+}
+
+.footer-social {
+  margin: 0 0 70px 0;
+}
+
+.footer-social a {
+  color: #c2cfd7;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer-social a:hover {
+  color: #fe667f;
+}
+
+.footer p {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
