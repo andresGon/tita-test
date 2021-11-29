@@ -19,3 +19,20 @@ const wrapMasonry = document.querySelector('.mansonry-wrap');
       wrapMasonry.innerHTML += '<div class="mansonry-wImg"><img src="' + element.src +'"></div>'
     });
   });
+
+// funcionalidad btn menu reponsive
+
+const btnMenu = document.querySelector('.header-navMob');
+const menu = document.querySelector('nav');
+const body = document.querySelector('body');
+const btnClose = document.querySelector('.btn-close');
+
+btnMenu.addEventListener('click', function(){
+  menu.classList.add('active');
+  body.classList.add('no-scroll')
+})
+
+btnClose.addEventListener('click', function(){
+  menu.classList.remove('active');
+  body.classList.remove('no-scoll');
+});

@@ -55,6 +55,59 @@
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Questrial', sans-serif;*/
 
+/* ========= mixins ========= */
+
+
+@mixin xl {
+    @media (max-width: 1200px) {
+        @content;
+    }
+  
+}
+
+@mixin lg {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: 768px) {
+        @content;
+    }
+  
+}
+
+@mixin md2 {
+    @media (max-width: 767px) {
+        @content;
+    }
+  
+}
+
+@mixin sm {
+    @media (max-width: 576px) {
+        @content;
+    }
+  
+}
+
+@mixin media ($ancho) {
+    @media (max-width: $ancho) {
+      @content;
+    }
+  }
+  @mixin mediaAlto ($alto) {
+    @media (max-height: $alto) {
+      @content;
+    }
+  }
+  @mixin mediaMin ($ancho2) {
+    @media (min-width: $ancho2) {
+      @content;
+    }
+  }
+
 $ques: 'Questrial', sans-serif;
 $pink: #fe667f;
 
@@ -62,6 +115,9 @@ html, body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    &.no-scroll{
+        overflow: hidden;
+    }
 }
 
 .container{
@@ -92,6 +148,9 @@ header{
     width: 1170px;
     height: 100px;
     margin: auto;
+    @include xl{
+        width: 90%;
+    }
 }
 .header{
     &-btnSearch{
@@ -112,11 +171,47 @@ header{
         display: flex;
         align-items: center;
     }
+    &-navMob{
+        width: 34px;
+        height: 34px;
+        position: relative;
+        border: none;
+        display: none;
+        font-size: 18px;
+        color: $pink;
+        background: none;
+        @include md2{
+            display: block;
+        }
+    }
 }
 nav{
     display: flex;
     align-items: center;
-    
+    @include md2{
+        display: none;
+    }
+    &.active{
+        @include md2{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            z-index: 10;
+        }
+    }
+    .btn-main{
+        @include md2{
+            font-size: 24px;
+            padding: 15px 20px;
+        }
+    }
 }
 
 
@@ -127,6 +222,15 @@ nav{
         margin: auto;
         column-count: 3;
         column-gap: 10px;
+        @include xl{
+            width: 90%;
+        }
+        @include md{
+            column-count: 2;
+        }
+        @include sm {
+            column-count: 1;
+        }
     }
     &-wImg{
         display: inline-block;
@@ -172,6 +276,7 @@ nav{
         font-size: 40px;
         letter-spacing: 5px;
         font-weight: 700;
+        text-align: center;
     }
     &-txt{
         margin: 0 0 50px 0;
@@ -213,8 +318,20 @@ nav{
             color: #fff;
             background-color: $pink; 
         }
+        @include sm {
+            padding: 10px 14px;
+        }
     }
-
+    &-close{
+        display: none;
+        position: absolute;
+        z-index: 11;
+        top: 10px;
+        right: 10px;
+        @include md2{
+            display: block;
+        }
+    }
 }
 
 //footer

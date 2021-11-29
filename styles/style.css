@@ -56,10 +56,15 @@
 
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Questrial', sans-serif;*/
+/* ========= mixins ========= */
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+}
+
+html.no-scroll, body.no-scroll {
+  overflow: hidden;
 }
 
 .container {
@@ -106,6 +111,12 @@ header {
   margin: auto;
 }
 
+@media (max-width: 1200px) {
+  header {
+    width: 90%;
+  }
+}
+
 .header-btnSearch {
   width: 34px;
   height: 34px;
@@ -138,6 +149,23 @@ header {
           align-items: center;
 }
 
+.header-navMob {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  border: none;
+  display: none;
+  font-size: 18px;
+  color: #fe667f;
+  background: none;
+}
+
+@media (max-width: 767px) {
+  .header-navMob {
+    display: block;
+  }
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,6 +175,44 @@ nav {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  nav.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 767px) {
+  nav .btn-main {
+    font-size: 24px;
+    padding: 15px 20px;
+  }
+}
+
 .mansonry-wrap {
   width: 1170px;
   margin: auto;
@@ -154,6 +220,26 @@ nav {
           column-count: 3;
   -webkit-column-gap: 10px;
           column-gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .mansonry-wrap {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mansonry-wrap {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .mansonry-wrap {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
 }
 
 .mansonry-wImg {
@@ -225,6 +311,7 @@ nav {
   font-size: 40px;
   letter-spacing: 5px;
   font-weight: 700;
+  text-align: center;
 }
 
 .banner-txt {
@@ -269,6 +356,26 @@ nav {
 .btn-main.active {
   color: #fff;
   background-color: #fe667f;
+}
+
+@media (max-width: 576px) {
+  .btn-main {
+    padding: 10px 14px;
+  }
+}
+
+.btn-close {
+  display: none;
+  position: absolute;
+  z-index: 11;
+  top: 10px;
+  right: 10px;
+}
+
+@media (max-width: 767px) {
+  .btn-close {
+    display: block;
+  }
 }
 
 footer {
