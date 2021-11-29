@@ -188,22 +188,25 @@ header{
 nav{
     display: flex;
     align-items: center;
+    transition: .3s;
+    transition-timing-function: cubic-bezier(0,.84,0,1);
     @include md2{
-        display: none;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 10;
+        transform: translateX(-100%);
     }
     &.active{
         @include md2{
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: center;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: #fff;
-            z-index: 10;
+            transform: translateX(0%);
         }
     }
     .btn-main{
@@ -326,8 +329,11 @@ nav{
         display: none;
         position: absolute;
         z-index: 11;
-        top: 10px;
-        right: 10px;
+        top: 40px;
+        right: 35px;
+        color: #707070;
+        font-family: $ques;
+        font-size: 22px;
         @include md2{
             display: block;
         }
